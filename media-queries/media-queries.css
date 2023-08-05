@@ -1,0 +1,18 @@
+/*
+- 768pxをブレークポイントにする
+- ブレークポイントより画面幅が小さいときはdiv要素を横並びにし、ブレークポイントより画面幅が狭いときは盾並びにする
+*/
+
+div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: orange;
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        display: block;
+    }
+}
