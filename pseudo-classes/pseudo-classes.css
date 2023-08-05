@@ -1,0 +1,38 @@
+.parent {
+    background-color: whitesmoke;
+}
+
+a:link {
+    /*:linkは未訪問のリンクの文字色を変更するために利用する*/
+    color:orange;
+}
+
+/*リンクが訪問済みの時に適用する*/
+a:visited{
+    color: green;
+}
+
+/*マウスのカーソルが乗っているときに適用する*/
+a:hover {
+    color: purple;
+}
+
+/*active状態（左クリックしたから離すまで）のときに適用する*/
+a:active {
+    color: red;
+}
+
+/* 親要素のすべての要素を数えて4番目にある要素にスタイルを適用する*/
+.parent p:nth-child(4) {
+    color: red;
+}
+
+/*親要素内にある同じ要素の中で4番目の要素にスタイルを適用する*/
+.parent p:nth-of-type(4) {
+    color: blue;
+}
+
+/*p要素以外に取り消し線を設定する*/
+.parent :not(p) {
+    text-decoration: line-through;
+}
